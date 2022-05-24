@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shopping Website: Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+<!--header-->
+<div style="background: chocolate">
+    <h1 class="display-3" style="color: indigo;text-align: center">
+        <img src="img/Logo.jpg" height="10%" width="10%">Online Shopping Website: Login
+    </h1>
+</div>
+<br/><br/><br/>
+<!--login part-->
+<form id="loginform" class="row g-3" method="post">
+    <div class="row mb-3">
+        <label for="username" class="col-sm-2 col-form-label">Username</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+
+        <label for="password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="password" name="password"
+                   pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[,#?!@$%^&*-]).{6,}$" required>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" name="login">Sign in</button>
+</form>
+
+</body>
+</html>
